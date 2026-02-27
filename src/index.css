@@ -1,0 +1,305 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.btn-primary {
+  background-color: #374151;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-danger {
+  background: none;
+  border: none;
+  color: #b91c1c;
+  padding: 0;
+  font-weight: 500;
+}
+
+.btn-danger:hover {
+  text-decoration: underline;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.error-text {
+  color: red;
+  margin-top: 8px;
+}
+
+.track-item {
+  margin-bottom: 12px;
+}
+
+.track-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.track-main {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.track-status {
+  opacity: 0.8;
+}
+
+.track-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.track-description {
+  margin-top: 4px;
+}
+
+.app-shell {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 24px 16px 32px;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.app-title {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.app-nav {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #4b5563;
+}
+
+.nav-link:hover {
+  color: #111827;
+}
+
+.nav-link-active {
+  color: #111827;
+  border-bottom: 2px solid #111827;
+  padding-bottom: 2px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.page-title {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.page-subtitle {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group button {
+  width: fit-content;
+  align-self: flex-end;
+}
+
+.tracks-summary {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 4px;
+}
+
+.stats-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stats-item {
+  background-color: #f9fafb;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.session-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.session-item {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.session-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.session-meta {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.stats-number {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+input,
+select {
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background-color: #ffffff;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4b5563;
+}
+
+@media (max-width: 640px) {
+  .app-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .app-footer {
+    margin-top: 24px;
+    padding-top: 12px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 0.85rem;
+    color: #6b7280;
+  }
+
+  .app-shell {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .app-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 6px 0;
+  }
+}
