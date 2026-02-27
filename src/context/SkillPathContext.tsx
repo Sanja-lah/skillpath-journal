@@ -10,27 +10,13 @@ function loadInitialTracks(): Track[] {
   const stored = window.localStorage.getItem(TRACKS_STORAGE_KEY);
 
   if (!stored) {
-    return [
-      {
-        id: "1",
-        title: "React Basics",
-        description: "Understanding components and state",
-        status: "in-progress",
-      },
-    ];
+    return [];
   }
 
   try {
     return JSON.parse(stored) as Track[];
   } catch {
-    return [
-      {
-        id: "1",
-        title: "React Basics",
-        description: "Understanding components and state",
-        status: "in-progress",
-      },
-    ];
+    return [];
   }
 }
 
