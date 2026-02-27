@@ -3,6 +3,8 @@
 SkillPath Journal is a web application for organizing learning tracks and logging study sessions.  
 It helps track progress, total study time, and keeps data stored locally in the browser.
 
+Live Demo: https://study-track-manager.netlify.app
+
 ## Application Preview
 
 ### Dashboard
