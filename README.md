@@ -5,6 +5,8 @@ It helps track progress, total study time, and keeps data stored locally in the 
 
 Live Demo: https://study-track-manager.netlify.app
 
+Note: The app uses localStorage, so it will be empty on first visit. Add a few tracks and sessions to see how it works.
+
 ## Application Preview
 
 ### Dashboard
